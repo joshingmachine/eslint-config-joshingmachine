@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-joshingmachine",
+  "version": "0.1.0",
+  "description": "ESLint config based on Josh Smith's preferences",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshingmachine/eslint-config-joshingmachine.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "joshingmachine",
+    "javascript",
+    "format",
+    "lint"
+  ],
+  "author": "Josh Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshingmachine/eslint-config-joshingmachine/issues"
+  },
+  "homepage": "https://github.com/joshingmachine/eslint-config-joshingmachine#readme"
+}
