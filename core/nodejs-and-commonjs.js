@@ -12,6 +12,12 @@ module.exports = {
         'no-path-concat': 'error',
         'no-process-env': 'error',
         'no-process-exit': 'error',
-
+        'no-restricted-modules': [ 'off', {
+            'paths': [],
+            'patterns': [],
+        }],
+        'no-sync': [ 'error', {
+            'allowAtRootLevel': false,
+        }],
     },
 }
