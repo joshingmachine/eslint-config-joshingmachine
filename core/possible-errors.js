@@ -8,7 +8,7 @@ module.exports = {
         'no-compare-neg-zero': 'error',
         'no-cond-assign': [ 'error', 'always' ],
         'no-console': [ 'error', {
-            'allow': [],
+            'allow': [ '' ],
         }],
         'no-constant-condition': [ 'error', {
             'checkLoops': true,
@@ -33,7 +33,7 @@ module.exports = {
         }],
         'no-extra-semi': 'error',
         'no-func-assign': 'error',
-        'no-inner-declarations': 'both',
+        'no-inner-declarations': [ 'error', 'both' ],
         'no-invalid-regexp': [ 'error', {
             'allowConstructorFlags': [ 'u', 'y' ],
         }],

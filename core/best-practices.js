@@ -97,7 +97,15 @@ module.exports = {
         'no-redeclare': [ 'error', {
             'builtinGlobals': true,
         }],
-        'no-restricted-properties': [ 'error', {} ],
+        'no-restricted-properties': [ 'error',
+            // Unused option, could add option like
+            // {
+            //     "object": "disallowedObjectName",
+            //     "property": "disallowedPropertyName"
+            //     'message': 'Please use
+            //     allowedObjectName.allowedPropertyName.',
+            //  }
+        ],
         'no-return-assign': [ 'error', 'always' ],
         'no-return-await': 'error',
         'no-script-url': 'error',
