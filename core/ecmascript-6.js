@@ -26,6 +26,10 @@ module.exports = {
         'no-duplicate-imports': [ 'error', {
             'includeExports': true,
         }],
-
+        'no-new-symbol': 'error',
+        'no-restricted-imports': [ 'error', {
+            'paths': [],
+            'patterns': [],
+        }],
     },
 }
