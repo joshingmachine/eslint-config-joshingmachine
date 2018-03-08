@@ -27,7 +27,35 @@ module.exports = {
         'no-extra-parens': [ 'error', 'all', {
             'conditionalAssign': true,
             'returnAssign': true,
-
+            'nestedBinaryExpressions': true,
+            'ignoreJSX': 'multi-line',
+            'enforceForArrowConditionals': true,
+        }],
+        'no-extra-semi': 'error',
+        'no-func-assign': 'error',
+        'no-inner-declarations': 'both',
+        'no-invalid-regexp': [ 'error', {
+            'allowConstructorFlags': [ 'u', 'y' ],
+        }],
+        'no-irregular-whitespace': [ 'error', {
+            'skipStrings': true,
+            'skipComments': false,
+            'skipRegExps': true,
+            'skipTemplates': true,
+        }],
+        'no-obj-calls': 'error',
+        'no-prototype-builtins': 'error',
+        'no-regex-spaces': 'error',
+        'no-sparse-arrays': 'error',
+        'no-template-curly-in-string': 'error',
+        'no-unexpected-multiline': 'error',
+        'no-unreachable': 'error',
+        'no-unsafe-finally': 'error',
+        'no-unsafe-negation': 'error',
+        'use-isnan': 'error',
+        'valid-jsdoc': 'off',
+        'valid-typeof': [ 'error', {
+            'requireStringLiterals': true,
         }],
     },
 }
