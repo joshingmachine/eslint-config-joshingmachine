@@ -20,7 +20,7 @@ module.exports = {
             'vars': 'all',
             'varsIgnorePattern': '',
             'args': 'all',
-            'ignoreRestSiblings', false,
+            'ignoreRestSiblings': false,
             'argsIgnorePattern': '',
             'caughtErrors': 'all',
             'caughtErrorsIgnorePattern': '',
