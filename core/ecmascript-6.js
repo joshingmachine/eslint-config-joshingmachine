@@ -1,4 +1,11 @@
 module.exports = {
+    parserOptions: {
+        ecmaVersion: 2018,
+        ecmaFeatures: {
+            impliedStrict: true,
+            jsx: true,
+        },
+    },
     rules: {
         'arrow-body-style': [ 'error', 'as-needed', {
             'requireReturnForObjectLiteral': false,
