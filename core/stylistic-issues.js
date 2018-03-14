@@ -38,11 +38,20 @@ module.exports = {
             'exceptions': [],
         }],
         'id-match': 'off', // TODO: Determine best id regex
-
-        'line-comment-position': 'off',
-        'linebreak-style': 'off',
-        'lines-between-class-members': 'off',
-        'max-depth': 'off',
+        'line-comment-position': [ 'error, {
+            'position': 'above',
+            'ignorePattern': '',
+            'applyDefaultIgnorePatterns': true,
+        }],
+        'linebreak-style': [ 'error', 'unix' ],
+        'lines-between-class-members': [ 'error', 'always', {
+            'exceptAfterSingleLine': false,
+        }],
+        'max-depth': [ 'error', {
+            // TODO: Come back to this one
+            'max': 4,
+        }],
+        // TODO: Come back to this one
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
         'max-params': 'off',
