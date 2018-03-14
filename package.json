@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "unused-rules": "eslint-find-rules --unused --no-error",
-    "used-rules": "eslint-find-rules --current"
+    "rules:unused": "eslint-find-rules --unused --no-error",
+    "rules:used": "eslint-find-rules --current"
   },
   "repository": {
     "type": "git",
