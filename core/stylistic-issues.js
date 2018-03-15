@@ -47,25 +47,31 @@ module.exports = {
         'lines-between-class-members': [ 'error', 'always', {
             'exceptAfterSingleLine': false,
         }],
-        'max-depth': [ 'error', {
-            // TODO: Come back to this one
-            'max': 4,
-        }],
-        // TODO: Come back to this one
+        // While I agree with the idea behind most of these 'max' rules,
+        // I feel like it's arbitrary or difficult to pick a good 'max'
+        // number for these cases, so I'm leaving them off (for now).
+        'max-depth': 'off',
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
         'max-params': 'off',
         'max-statements': 'off',
-        'max-statements-per-line': 'off',
-        'multiline-comment-style': 'off',
+        // This rule 'max-statements-per-line' is one exception, I feel
+        // it's generally a good idea to only have 1 statement per line.
+        'max-statements-per-line': [ 'error', {
+            'max': 1,
+        }],
+        'multiline-comment-style': [ 'error', 'separate-lines' ],
         'new-cap': 'off',
         'no-array-constructor': 'off',
-        'no-bitwise': 'off',
-        'no-continue': 'off',
+        'no-bitwise': [ 'error', {
+            'allow': [],
+            'int32Hint': false,
+        }],
+        'no-continue': 'error',
         'no-inline-comments': 'off',
-        'no-lonely-if': 'off',
-        'no-multi-assign': 'off',
-        'no-negated-condition': 'off',
+        'no-lonely-if': 'error',
+        'no-multi-assign': 'error',
+        'no-negated-condition': 'error',
         'no-nested-ternary': 'off',
         'no-new-object': 'off',
         'no-plusplus': 'off',
