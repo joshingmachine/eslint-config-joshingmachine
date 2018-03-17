@@ -1,48 +1,70 @@
 module.exports = {
     rules: {
         'for-direction': 'error',
-        'getter-return': [ 'error', {
-            'allowImplicit': false,
-        }],
+        'getter-return': [
+            'error',
+            {
+                allowImplicit: false,
+            },
+        ],
         'no-await-in-loop': 'error',
         'no-compare-neg-zero': 'error',
-        'no-cond-assign': [ 'error', 'always' ],
-        'no-console': [ 'error', {
-            'allow': [ '' ],
-        }],
-        'no-constant-condition': [ 'error', {
-            'checkLoops': true,
-        }],
+        'no-cond-assign': ['error', 'always'],
+        'no-console': [
+            'error',
+            {
+                allow: [''],
+            },
+        ],
+        'no-constant-condition': [
+            'error',
+            {
+                checkLoops: true,
+            },
+        ],
         'no-control-regex': 'error',
         'no-debugger': 'error',
         'no-dupe-args': 'error',
         'no-dupe-keys': 'error',
         'no-duplicate-case': 'error',
-        'no-empty': [ 'error', {
-            'allowEmptyCatch': false,
-        }],
+        'no-empty': [
+            'error',
+            {
+                allowEmptyCatch: false,
+            },
+        ],
         'no-empty-character-class': 'error',
         'no-ex-assign': 'error',
         'no-extra-boolean-cast': 'error',
-        'no-extra-parens': [ 'error', 'all', {
-            'conditionalAssign': true,
-            'returnAssign': true,
-            'nestedBinaryExpressions': true,
-            'ignoreJSX': 'multi-line',
-            'enforceForArrowConditionals': true,
-        }],
+        'no-extra-parens': [
+            'error',
+            'all',
+            {
+                conditionalAssign: true,
+                returnAssign: true,
+                nestedBinaryExpressions: true,
+                ignoreJSX: 'multi-line',
+                enforceForArrowConditionals: true,
+            },
+        ],
         'no-extra-semi': 'error',
         'no-func-assign': 'error',
-        'no-inner-declarations': [ 'error', 'both' ],
-        'no-invalid-regexp': [ 'error', {
-            'allowConstructorFlags': [ 'u', 'y' ],
-        }],
-        'no-irregular-whitespace': [ 'error', {
-            'skipStrings': true,
-            'skipComments': false,
-            'skipRegExps': true,
-            'skipTemplates': true,
-        }],
+        'no-inner-declarations': ['error', 'both'],
+        'no-invalid-regexp': [
+            'error',
+            {
+                allowConstructorFlags: ['u', 'y'],
+            },
+        ],
+        'no-irregular-whitespace': [
+            'error',
+            {
+                skipStrings: true,
+                skipComments: false,
+                skipRegExps: true,
+                skipTemplates: true,
+            },
+        ],
         'no-obj-calls': 'error',
         'no-prototype-builtins': 'error',
         'no-regex-spaces': 'error',
@@ -54,8 +76,11 @@ module.exports = {
         'no-unsafe-negation': 'error',
         'use-isnan': 'error',
         'valid-jsdoc': 'off',
-        'valid-typeof': [ 'error', {
-            'requireStringLiterals': true,
-        }],
+        'valid-typeof': [
+            'error',
+            {
+                requireStringLiterals: true,
+            },
+        ],
     },
 }
