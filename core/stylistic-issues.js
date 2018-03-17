@@ -38,7 +38,7 @@ module.exports = {
             'exceptions': [],
         }],
         'id-match': 'off', // TODO: Determine best id regex
-        'line-comment-position': [ 'error, {
+        'line-comment-position': [ 'error', {
             'position': 'above',
             'ignorePattern': '',
             'applyDefaultIgnorePatterns': true,
@@ -72,19 +72,43 @@ module.exports = {
         'no-lonely-if': 'error',
         'no-multi-assign': 'error',
         'no-negated-condition': 'error',
-        'no-nested-ternary': 'off',
-        'no-new-object': 'off',
-        'no-plusplus': 'off',
+        'no-nested-ternary': 'error',
+        'no-new-object': 'error',
+        'no-plusplus': [ 'error', {
+            'allowForLoopAfterthoughts': true,
+        }],
         'no-restricted-syntax': 'off',
         'no-ternary': 'off',
-        'no-underscore-dangle': 'off',
-        'no-unneeded-ternary': 'off',
-        'one-var': 'off',
-        'operator-assignment': 'off',
+        'no-underscore-dangle': [ 'error', {
+            'allow': [],
+            'allowAfterThis': false,
+            'allowAfterSuper': false,
+            'enforceInMethodNames': false,
+        }],
+        'no-unneeded-ternary': [ 'error', {
+            'defaultAssignment': false,
+        }],
+        'one-var': [ 'error', {
+            'initialized': 'never',
+            'uninitialized': 'always',
+        }],
+        'operator-assignment': [ 'error', 'always' ],
+        // TODO: Turn this rule on with some configurations. I like the idea
+        // of enforcing blank lines in some situations, but it's difficult
+        // to think through all of those cases right now. One rainy day, though.
         'padding-line-between-statements': 'off',
+        // I don't use JSDoc, but maybe one day...
         'require-jsdoc': 'off',
-        'sort-keys': 'off',
-        'sort-vars': 'off',
-        'spaced-comment': 'off',
+        'sort-keys': [ 'error', 'asc', {
+            'caseSensitive': true,
+            'natural': true,
+        }],
+        'sort-vars': [ 'error', {
+            'ignoreCase': false,
+        }],
+        'spaced-comment': [ 'error', 'always', {
+            'exceptions': [],
+            'markers': [],
+        }],
     },
 }
