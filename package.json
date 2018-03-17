@@ -4,7 +4,8 @@
   "description": "ESLint config based on Josh Smith's preferences",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --fix --config index.js **/*.js",
+    "lint": "eslint --config index.js **/*.js",
+    "lint:fix": "eslint --fix --config index.js **/*.js",
     "rules:unused": "eslint-find-rules --unused --no-error",
     "rules:used": "eslint-find-rules --current",
     "test": "echo \"Error: no test specified\" && exit 1"
