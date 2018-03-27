@@ -3,8 +3,8 @@ module.exports = {
         'accessor-pairs': [
             'error',
             {
-                setWithoutGet: true,
                 getWithoutSet: false,
+                setWithoutGet: true,
             },
         ],
         'array-callback-return': [
@@ -97,10 +97,10 @@ module.exports = {
         'no-implicit-coercion': [
             'error',
             {
+                allow: ['!!'],
                 boolean: true,
                 number: true,
                 string: true,
-                allow: ['!!'],
             },
         ],
         'no-implicit-globals': 'error',
@@ -119,19 +119,19 @@ module.exports = {
         'no-magic-numbers': [
             'error',
             {
+                detectObjects: false,
+                enforceConst: true,
                 ignore: [],
                 ignoreArrayIndexes: true,
-                enforceConst: true,
-                detectObjects: false,
             },
         ],
         'no-multi-spaces': [
             'error',
             {
-                ignoreEOLComments: false,
                 exceptions: {
                     Property: false,
                 },
+                ignoreEOLComments: false,
             },
         ],
         'no-multi-str': 'error',
@@ -143,8 +143,8 @@ module.exports = {
         'no-param-reassign': [
             'error',
             {
-                props: true,
                 ignorePropertyModificationsFor: [],
+                props: true,
             },
         ],
         'no-proto': 'error',
@@ -181,8 +181,8 @@ module.exports = {
             'error',
             {
                 allowShortCircuit: false,
-                allowTernary: false,
                 allowTaggedTemplates: false,
+                allowTernary: false,
             },
         ],
         'no-unused-labels': 'error',
@@ -194,8 +194,8 @@ module.exports = {
         'no-warning-comments': [
             'warn',
             {
-                terms: ['todo'],
                 location: 'anywhere',
+                terms: ['todo'],
             },
         ],
         'no-with': 'error',
