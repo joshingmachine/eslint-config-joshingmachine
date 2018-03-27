@@ -1,4 +1,9 @@
+const prettierConfigJoshingmachine = require('prettier-config-joshingmachine')
+
 module.exports = {
-    extends: ['plugin:prettier/recommended'],
+    extends: ['prettier'],
     plugins: ['prettier'],
+    rules: {
+        'prettier/prettier': ['error', prettierConfigJoshingmachine],
+    },
 }
