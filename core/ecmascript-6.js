@@ -1,10 +1,10 @@
 module.exports = {
     parserOptions: {
-        ecmaVersion: 2018,
         ecmaFeatures: {
             impliedStrict: true,
             jsx: true,
         },
+        ecmaVersion: 2018,
     },
     rules: {
         'arrow-body-style': [
@@ -24,17 +24,17 @@ module.exports = {
         'arrow-spacing': [
             'error',
             {
-                before: true,
                 after: true,
+                before: true,
             },
         ],
         'constructor-super': 'error',
         'generator-star-spacing': [
             'error',
             {
-                before: true,
                 after: false,
                 anonymous: 'before',
+                before: true,
                 method: 'before',
             },
         ],
@@ -68,8 +68,8 @@ module.exports = {
             'error',
             {
                 ignoreDestructuring: false,
-                ignoreImport: false,
                 ignoreExport: false,
+                ignoreImport: false,
             },
         ],
         'no-var': 'error',
@@ -77,9 +77,9 @@ module.exports = {
             'error',
             'always',
             {
+                avoidExplicitReturnArrows: false,
                 avoidQuotes: true,
                 ignoreConstructors: false,
-                avoidExplicitReturnArrows: false,
             },
         ],
         'prefer-arrow-callback': [
@@ -99,12 +99,12 @@ module.exports = {
         'prefer-destructuring': [
             'error',
             {
-                VariableDeclarator: {
-                    array: false,
-                    object: true,
-                },
                 AssignmentExpression: {
                     array: true,
+                    object: true,
+                },
+                VariableDeclarator: {
+                    array: false,
                     object: true,
                 },
             },
