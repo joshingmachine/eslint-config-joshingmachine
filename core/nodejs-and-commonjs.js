@@ -7,8 +7,8 @@ module.exports = {
         'no-mixed-requires': [
             'error',
             {
-                grouping: true,
                 allowCall: true,
+                grouping: true,
             },
         ],
         'no-new-require': 'error',
