@@ -1,10 +1,15 @@
 language: node_js
-
+node_js: "lts/*"
+cache:
+    directories:
+        - "node_modules"
+install: "npm install"
+script: "npm test"
 deploy:
-  provider: npm
-  email: "$NPM_EMAIL"
-  api_key: "$NPM_TOKEN"
-  on:
-    repo: joshingmachine/eslint-config-joshingmachine
-    tags: true
-    branch: master
+    provider: npm
+    email: "$NPM_EMAIL"
+    api_key: "$NPM_TOKEN"
+    on:
+        repo: joshingmachine/eslint-config-joshingmachine
+        tags: true
+        branch: master
