@@ -41,10 +41,10 @@ module.exports = {
             'all',
             {
                 conditionalAssign: true,
-                returnAssign: true,
-                nestedBinaryExpressions: true,
-                ignoreJSX: 'multi-line',
                 enforceForArrowConditionals: true,
+                ignoreJSX: 'multi-line',
+                nestedBinaryExpressions: true,
+                returnAssign: true,
             },
         ],
         'no-extra-semi': 'error',
@@ -59,9 +59,9 @@ module.exports = {
         'no-irregular-whitespace': [
             'error',
             {
-                skipStrings: true,
                 skipComments: false,
                 skipRegExps: true,
+                skipStrings: true,
                 skipTemplates: true,
             },
         ],
