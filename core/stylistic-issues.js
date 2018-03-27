@@ -10,15 +10,15 @@ module.exports = {
             'error',
             'always',
             {
-                line: {
-                    ignorePattern: '',
-                    ignoreInlineComments: false,
-                    ignoreConsecutiveComments: true,
-                },
                 block: {
-                    ignorePattern: '',
-                    ignoreInlineComments: true,
                     ignoreConsecutiveComments: true,
+                    ignoreInlineComments: true,
+                    ignorePattern: '',
+                },
+                line: {
+                    ignoreConsecutiveComments: true,
+                    ignoreInlineComments: false,
+                    ignorePattern: '',
                 },
             },
         ],
@@ -42,27 +42,31 @@ module.exports = {
             },
         ],
         'id-blacklist': [
+            // NOTE: Remember not to alphabetize this list, because 'error' is
+            // actually the error level
             'error',
-            'data',
             'callback',
-            'context', // I've been burned too many times...
+            // I've been burned too many times by 'context'...
+            'context',
+            'data',
         ],
         'id-length': [
             'error',
             {
-                min: 2,
-                max: Infinity,
-                properties: 'always',
                 exceptions: [],
+                max: Infinity,
+                min: 2,
+                properties: 'always',
             },
         ],
-        'id-match': 'off', // TODO: Determine best id regex
+        // TODO: Determine best id regex
+        'id-match': 'off',
         'line-comment-position': [
             'error',
             {
-                position: 'above',
-                ignorePattern: '',
                 applyDefaultIgnorePatterns: true,
+                ignorePattern: '',
+                position: 'above',
             },
         ],
         'linebreak-style': ['error', 'unix'],
@@ -118,8 +122,8 @@ module.exports = {
             'error',
             {
                 allow: [],
-                allowAfterThis: false,
                 allowAfterSuper: false,
+                allowAfterThis: false,
                 enforceInMethodNames: false,
             },
         ],
