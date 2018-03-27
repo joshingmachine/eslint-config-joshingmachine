@@ -8,9 +8,9 @@ module.exports = {
         'no-shadow': [
             'error',
             {
+                allow: [],
                 builtinGlobals: true,
                 hoist: 'all',
-                allow: [],
             },
         ],
         'no-shadow-restricted-names': 'error',
@@ -25,20 +25,20 @@ module.exports = {
         'no-unused-vars': [
             'error',
             {
-                vars: 'all',
-                varsIgnorePattern: '',
                 args: 'all',
-                ignoreRestSiblings: false,
                 argsIgnorePattern: '',
                 caughtErrors: 'all',
                 caughtErrorsIgnorePattern: '',
+                ignoreRestSiblings: false,
+                vars: 'all',
+                varsIgnorePattern: '',
             },
         ],
         'no-use-before-define': [
             'error',
             {
-                functions: false,
                 classes: true,
+                functions: false,
                 variables: true,
             },
         ],
