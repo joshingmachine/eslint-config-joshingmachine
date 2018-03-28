@@ -169,6 +169,8 @@ module.exports = {
         quotes: ['error', prettierConfig.singleQuote ? 'single' : 'double'],
         // I don't use JSDoc, but maybe one day...
         'require-jsdoc': 'off',
+        // And another 'Prettier as Source of Truth™' rule.
+        semi: ['error', prettierConfig.semi ? 'always' : 'never'],
         'sort-keys': [
             'error',
             'asc',
