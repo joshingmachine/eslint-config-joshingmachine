@@ -1,3 +1,5 @@
+const prettierConfig = require('prettier-config-joshingmachine')
+
 module.exports = {
     rules: {
         camelcase: [
@@ -81,6 +83,19 @@ module.exports = {
         // I feel like it's arbitrary or difficult to pick a good 'max'
         // number for these cases, so I'm leaving them off (for now).
         'max-depth': 'off',
+        // Generally, this rule will be disabled with by eslint-config-prettier.
+        // However if the user decides not to use Prettier with their linting
+        // setup, these rules should still be enforced, so I'm importing the
+        // values from my Prettier configuration file so that the configuration
+        // file can act as a single Source of Truth™.
+        'max-len': [
+            'error',
+            {
+                code: prettierConfig.printWidth,
+                tabWidth: prettierConfig.tabWidth,
+            },
+        ],
+        // Same deal as the comment before 'max-depth'
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
         'max-params': 'off',
@@ -117,6 +132,10 @@ module.exports = {
             },
         ],
         'no-restricted-syntax': 'off',
+        // Similar to 'max-len', I'm using the Prettier configuration file as
+        // the Source of Truth™ so that even if a user decides not to use
+        // Prettier with this linting config, the style will still be enforced.
+        'no-tabs': prettierConfig.useTabs ? 'off' : 'error',
         'no-ternary': 'off',
         'no-underscore-dangle': [
             'error',
@@ -145,6 +164,9 @@ module.exports = {
         // of enforcing blank lines in some situations, but it's difficult
         // to think through all of those cases right now. One rainy day, though.
         'padding-line-between-statements': 'off',
+        // Another rule where it should be disabled by eslint-config-prettier,
+        // but if that's not being used, the style is still enforced.
+        quotes: ['error', prettierConfig.singleQuote ? 'single' : 'double'],
         // I don't use JSDoc, but maybe one day...
         'require-jsdoc': 'off',
         'sort-keys': [
