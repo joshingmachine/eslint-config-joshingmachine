@@ -1,3 +1,4 @@
 .editorconfig
 .gitignore
+.prettierrc.js
 .travis.yml
