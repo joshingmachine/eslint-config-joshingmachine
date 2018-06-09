@@ -3,8 +3,5 @@ module.exports = {
         browser: true,
         node: true,
     },
-    extends: [
-        './rules/core/index.js',
-        './rules/plugins/prettier.js',
-    ],
+    extends: ['./rules/core/index.js', './rules/plugins/prettier.js'],
 }
