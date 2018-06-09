@@ -4,8 +4,7 @@ module.exports = {
         node: true,
     },
     extends: [
-        './core/index.js',
-        './plugins/prettier.js',
+        './rules/core/index.js',
+        './rules/plugins/prettier.js',
     ],
-    rules: {},
 }
