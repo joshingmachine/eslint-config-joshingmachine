@@ -1,3 +1,7 @@
+// Setting this value up here so that the option
+// isn't considered a magic number below.
+const maxClassesPerFile = 1
+
 module.exports = {
     rules: {
         'accessor-pairs': [
@@ -49,6 +53,7 @@ module.exports = {
         ],
         eqeqeq: ['error', 'always'],
         'guard-for-in': 'error',
+        'max-classes-per-file': ['error', maxClassesPerFile],
         'no-alert': 'error',
         'no-caller': 'error',
         'no-case-declarations': 'error',
@@ -207,6 +212,7 @@ module.exports = {
         ],
         radix: ['error', 'always'],
         'require-await': 'error',
+        'require-unicode-regexp': 'error',
         'vars-on-top': 'error',
         'wrap-iife': [
             'error',

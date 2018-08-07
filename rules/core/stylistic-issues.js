@@ -97,11 +97,12 @@ module.exports = {
         ],
         // Same deal as the comment before 'max-depth'
         'max-lines': 'off',
+        'max-lines-per-function': 'off',
         'max-nested-callbacks': 'off',
         'max-params': 'off',
         'max-statements': 'off',
-        // This rule 'max-statements-per-line' is one exception, I feel
-        // it's generally a good idea to only have 1 statement per line.
+        // This rule 'max-statements-per-line' is an exception, I feel
+        // it's generally a good idea to only have one statement per line.
         'max-statements-per-line': [
             'error',
             {
@@ -164,6 +165,7 @@ module.exports = {
         // of enforcing blank lines in some situations, but it's difficult
         // to think through all of those cases right now. One rainy day, though.
         'padding-line-between-statements': 'off',
+        'prefer-object-spread': 'error',
         // Another rule where it should be disabled by eslint-config-prettier,
         // but if that's not being used, the style is still enforced.
         quotes: ['error', prettierConfig.singleQuote ? 'single' : 'double'],
