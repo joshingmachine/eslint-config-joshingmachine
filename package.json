@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-joshingmachine",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "ESLint config based on Josh Smith's preferences",
   "main": "index.js",
   "scripts": {
