@@ -1,7 +1,3 @@
 module.exports = {
-    extends: ['prettier/react'],
-    plugins: ['react'],
-    rules: {
-        'react/boolean-prop-naming': 0,
-    },
+    extends: ['./rules/plugins/react.js', 'prettier/react'],
 }
