@@ -1,3 +1,3 @@
 module.exports = {
-    extends: ['./rules/plugins/react.js', 'prettier/react'],
+    extends: ['./rules/plugins/react.js'],
 }
