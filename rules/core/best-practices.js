@@ -126,8 +126,10 @@ module.exports = {
             {
                 detectObjects: false,
                 enforceConst: true,
-                ignore: [],
-                ignoreArrayIndexes: true,
+                // Commonly used for iteration
+                // and accessing array values
+                ignore: [-1, 0, 1],
+                ignoreArrayIndexes: false,
             },
         ],
         'no-multi-spaces': [
