@@ -14,4 +14,4 @@ deploy:
     on:
         repo: joshingmachine/eslint-config-joshingmachine
         tags: true
-        branch: master
+        branch: main
